@@ -1,2 +1,17 @@
 {{page-title "New"}}
-{{outlet}}
+<form id="new-todo-form">
+	<div class='form-group'>
+		<label>Title</label>
+		{{input type="text" class="form-control" value=title placeholder="Todo Title.."}}
+	</div>
+	<div class='form-group'>
+		<label>Due Date</label>
+		{{input type="date" class="form-control" value=date }}
+	</div>
+	<div class='form-group'>
+		<label>Description</label>
+		{{textarea class="form-control" value=body placeholder="Todo body.."}}
+	</div>
+	<button class='btn btn-primary' type="submit" {{action "addTodo"}}>Add</button>
+	{{#link-to 'todos' class='btn btn-default'}}Close{{/link-to}}
+</form>

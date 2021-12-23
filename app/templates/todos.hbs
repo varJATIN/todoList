@@ -1,3 +1,17 @@
 {{page-title "Todos"}}
-<p>Inside todos page</p>
-{{outlet}}
+<div class="row">
+	<div class="col-md-4">
+		{{#link-to 'todos.new' class='btn btn-success'}}Add a New Todo{{/link-to}}
+		<hr>
+		{{outlet}}
+	</div>
+	<div class="col-md-8">
+		{{#each this.model as |todo|}}
+			<div class="well">
+				<h4>{{todo.title}}<span class="label label-default pull-right">
+					{{format-date todo.created_at}}</span></h4>
+					{{todo.body}}
+			</div>
+		{{/each}}
+	</div>
+</div>
