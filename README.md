@@ -24,6 +24,8 @@ You will need the following things properly installed on your computer.
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 * Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
+![image](https://user-images.githubusercontent.com/48639782/147266882-7c802581-a88e-46f0-8f61-e2e3f9633996.png)
+
 ### Code Generators
 
 Make use of the many generators for code, try `ember help generate` for more details
