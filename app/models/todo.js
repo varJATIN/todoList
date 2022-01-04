@@ -9,6 +9,10 @@ export default class TodoModel extends Model {
     defaultValue() {
       return new Date();
     },
-  })
-  created_at;
+  }) created_at;
+  @attr('boolean',{
+    defaultValue() {
+      return false;
+    },
+  }) completed;
 }

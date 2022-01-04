@@ -27,3 +27,6 @@
 .label-default {
     background-color: #777;
 }
+.completed{
+    text-decoration: line-through;
+}

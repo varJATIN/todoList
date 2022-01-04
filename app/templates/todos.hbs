@@ -8,8 +8,10 @@
 	<div class="col-md-8">
 		{{#each this.model as |todo|}}
 			<div class="well">
-				<h4>{{todo.title}}<span class="label label-default pull-right">
-					{{format-date todo.created_at}}</span></h4>
+				<h4 {{action "markComplete" todo}} class='{{if todo.completed "completed" "incomplete"}}'>
+					{{todo.title}}<span class="label label-default pull-right">
+					{{format-date todo.created_at}}</span>
+				</h4>
 					{{todo.body}}
 			</div>
 		{{/each}}
